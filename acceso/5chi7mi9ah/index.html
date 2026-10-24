@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Достъп — Спаси Брака</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Inter:wght@300;400;500;600&display=swap');
+
+  :root {
+    --gold: #C8A45C;
+    --dark: #2A0F19;
+    --accent: #6B1733;
+    --bg: #FBF9F5;
+    --text: #17130E;
+    --serif: 'Source Serif 4', Georgia, serif;
+    --sans: 'Inter', system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--sans);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px 60px;
+  }
+
+  /* ── HEADER ── */
+  .header {
+    width: 100%; max-width: 680px;
+    padding: 40px 0 32px;
+    text-align: center;
+    border-bottom: 1px solid rgba(200,164,92,.25);
+    margin-bottom: 40px;
+  }
+  .header-label {
+    font-size: 11px; font-weight: 600; letter-spacing: .16em;
+    text-transform: uppercase; color: var(--gold);
+    margin-bottom: 10px;
+  }
+  .header-title {
+    font-family: var(--serif);
+    font-size: 28px; font-weight: 700;
+    color: var(--dark); line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .header-sub {
+    font-size: 14px; color: #6B6157; font-style: italic;
+  }
+
+  /* ── GREETING ── */
+  .greeting {
+    width: 100%; max-width: 680px;
+    background: var(--dark);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 40px;
+    color: rgba(255,255,255,.9);
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .greeting strong { color: var(--gold); }
+
+  /* ── SECTION TITLE ── */
+  .section-title {
+    width: 100%; max-width: 680px;
+    font-family: var(--serif);
+    font-size: 15px; font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(200,164,92,.25);
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+
+  /* ── PRODUCT CARD ── */
+  .card {
+    width: 100%; max-width: 680px;
+    background: #fff;
+    border: 1px solid rgba(200,164,92,.2);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow .18s, border-color .18s;
+  }
+  .card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,.08);
+    border-color: rgba(200,164,92,.5);
+  }
+  .card-icon {
+    width: 48px; height: 48px; flex-shrink: 0;
+    background: rgba(200,164,92,.12);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .card-body { flex: 1; }
+  .card-title {
+    font-family: var(--serif);
+    font-size: 16px; font-weight: 700;
+    color: var(--dark); margin-bottom: 4px;
+  }
+  .card-desc {
+    font-size: 13px; color: #6B6157; line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .card-btn {
+    display: inline-flex; align-items: center; gap: 6px;
+    background: var(--gold);
+    color: var(--dark);
+    font-size: 12px; font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+  .card-btn:hover { background: #b8944c; }
+
+  /* ── DIVIDER ── */
+  .divider {
+    width: 100%; max-width: 680px;
+    height: 1px;
+    background: rgba(200,164,92,.2);
+    margin: 32px 0;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    width: 100%; max-width: 680px;
+    text-align: center;
+    font-size: 12px;
+    color: #9B8E85;
+    line-height: 1.7;
+    margin-top: 12px;
+  }
+  .footer a { color: var(--gold); }
+
+  /* ── NEXT STEP BOX ── */
+  .next-box {
+    width: 100%; max-width: 680px;
+    background: rgba(107,23,51,.06);
+    border: 1px solid rgba(107,23,51,.15);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--dark);
+  }
+  .next-box strong { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-label">Зона за достъп</div>
+  <div class="header-title">Спаси Брака</div>
+  <div class="header-sub">Твоите материали са готови за изтегляне</div>
+</div>
+
+<div class="greeting">
+  Благодаря ти, че се довери на <strong>Спаси Брака</strong>.<br>
+  По-долу ще намериш всичко, което си поръчал. Препоръчвам да започнеш с основното ръководство и да четеш по една глава на ден — прилагай всяко упражнение преди да продължиш. Промяната не идва от четенето, а от действието.
+</div>
+
+<div class="section-title">Основно ръководство</div>
+
+<div class="card">
+  <div class="card-icon">📖</div>
+  <div class="card-body">
+    <div class="card-title">Спаси Брака — Пълно ръководство</div>
+    <div class="card-desc">6 глави с конкретни системи и планове: Капанът на Сигурността, Инстинктът на Героя, 7-дневен план за уважение, протокол за трудни разговори, 4-седмичен план за близост и 6-седмичен план за доверие.</div>
+    <a class="card-btn" href="../../spasi-braka.pdf" download="Spasi-Braka.pdf">
+      ↓ Изтегли PDF
+    </a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="section-title">Бонуси включени в пакета</div>
+
+<div class="card">
+  <div class="card-icon">👨‍👧</div>
+  <div class="card-body">
+    <div class="card-title">Бонус 1: Мъжът и Бащата</div>
+    <div class="card-desc">Как начинът, по който си баща, определя начина, по който тя те вижда като мъж. Навикът, ежедневно сближаващ двата ти роли. Включен в основното ръководство — Глава 7.</div>
+    <a class="card-btn" href="../../spasi-braka.pdf" download="Spasi-Braka.pdf">
+      ↓ Виж в PDF (Гл. 7)
+    </a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-icon">🛡️</div>
+  <div class="card-body">
+    <div class="card-title">Бонус 2: Системата за Ранно Предупреждение</div>
+    <div class="card-desc">5 сигнала, появяващи се 3–6 месеца преди следваща криза. Планът за защита на промяната: всеки ден, всяка седмица, всеки месец. Включен в основното ръководство — Глава 8.</div>
+    <a class="card-btn" href="../../spasi-braka.pdf" download="Spasi-Braka.pdf">
+      ↓ Виж в PDF (Гл. 8)
+    </a>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<div class="next-box">
+  <strong>Следващата стъпка:</strong> Отвори Глава 1 и прочети раздела „Капанът на Сигурността". Вземи теста в края на главата. Резултатът ще ти покаже от коя глава да започнеш.
+</div>
+
+<div class="footer">
+  Въпроси? Пиши ни на <a href="mailto:customersupport.santi@gmail.com">customersupport.santi@gmail.com</a><br>
+  Благодарим ти, че избра да действаш.
+</div>
+
+</body>
+</html>
